@@ -24,6 +24,7 @@ int main() {
 	auto time1 = end - start;
 
 	// 処理に要した時間をミリ秒に変換
+	printf("コピーによりかかる時間\n");
 	auto msec1 = std::chrono::duration_cast<std::chrono::microseconds>(time1).count();
 	std::cout << msec1 << " msec" << std::endl;
 
@@ -44,6 +45,7 @@ int main() {
 	auto time2 = end - start;
 
 	// 処理に要した時間をミリ秒に変換
+	printf("移動によりかかる時間\n");
 	auto msec2 = std::chrono::duration_cast<std::chrono::microseconds>(time2).count();
 	std::cout << msec2 << " msec" << std::endl;
 
